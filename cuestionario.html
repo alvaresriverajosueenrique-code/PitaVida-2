@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cuestionario | luffiy cho </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <script>try {document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('pv-theme') || 'light')} catch (e) { }</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl sticky-top site-nav border-bottom">
+        <div class="container"><a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark">🎮</span>
+                luffiy cho</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#juegos">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jquery.html">jQuery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="json.html">JSON</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hosting.html">Hosting y dominios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cuestionario.html">Cuestionario</a></li>
+                    <li class="nav-item ms-xl-2"><button class="btn btn-sm btn-outline-secondary theme-toggle"
+                            type="button"><i class="bi bi-moon-stars"></i> Tema</button></li>
+                    <li class="nav-item ms-xl-2"><button class="btn btn-sm btn-primary" data-bs-toggle="offcanvas"
+                            data-bs-target="#cart">🛍 Carrito <span id="cartCount"
+                                class="badge text-bg-light">0</span></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container page-content py-5">
+        <div class="page-intro mb-5"><span class="eyebrow">REPASO</span>
+            <h1 class="display-5 fw-bold mt-2">Cuestionario de repaso</h1>
+            <p class="lead text-secondary">JavaScript, jQuery, JSON, hosting y dominios.</p>
+        </div>
+        <form id="quiz" class="content-card">
+            <p class="text-secondary">Selecciona una respuesta por pregunta y revisa tu resultado.</p>
+            <fieldset class="quiz-q">
+                <legend class="h6 fw-bold">1. ¿Para qué sirve JavaScript?</legend><label class="quiz-option"><input
+                        type="radio" name="q1" value="a" required> Crear interacción</label><label
+                    class="quiz-option"><input type="radio" name="q1" value="b" required> Guardar archivos del
+                    servidor</label><label class="quiz-option"><input type="radio" name="q1" value="c" required> Comprar
+                    dominios</label>
+            </fieldset>
+            <fieldset class="quiz-q">
+                <legend class="h6 fw-bold">2. ¿Qué biblioteca ofrece fadeIn() y slideToggle()?</legend><label
+                    class="quiz-option"><input type="radio" name="q2" value="a" required> Bootstrap</label><label
+                    class="quiz-option"><input type="radio" name="q2" value="b" required> jQuery</label><label
+                    class="quiz-option"><input type="radio" name="q2" value="c" required> JSON</label>
+            </fieldset>
+            <fieldset class="quiz-q">
+                <legend class="h6 fw-bold">3. ¿Para qué se usa JSON?</legend><label class="quiz-option"><input
+                        type="radio" name="q3" value="a" required> Cambiar colores</label><label
+                    class="quiz-option"><input type="radio" name="q3" value="b" required> Crear dominios</label><label
+                    class="quiz-option"><input type="radio" name="q3" value="c" required> Representar e intercambiar
+                    datos</label>
+            </fieldset>
+            <fieldset class="quiz-q">
+                <legend class="h6 fw-bold">4. ¿Qué servicio aloja los archivos de una página?</legend><label
+                    class="quiz-option"><input type="radio" name="q4" value="a" required> Hosting</label><label
+                    class="quiz-option"><input type="radio" name="q4" value="b" required> Dominio</label><label
+                    class="quiz-option"><input type="radio" name="q4" value="c" required> Evento click</label>
+            </fieldset>
+            <fieldset class="quiz-q">
+                <legend class="h6 fw-bold">5. ¿Qué es un dominio?</legend><label class="quiz-option"><input type="radio"
+                        name="q5" value="a" required> Un precio</label><label class="quiz-option"><input type="radio"
+                        name="q5" value="b" required> El nombre que identifica un sitio</label><label
+                    class="quiz-option"><input type="radio" name="q5" value="c" required> Una variable</label>
+            </fieldset>
+            <fieldset class="quiz-q">
+                <legend class="h6 fw-bold">6. ¿El carrito de PixelVault cobra dinero real?</legend><label
+                    class="quiz-option"><input type="radio" name="q6" value="a" required> Sí,
+                    automáticamente</label><label class="quiz-option"><input type="radio" name="q6" value="b" required>
+                    Solo con JSON</label><label class="quiz-option"><input type="radio" name="q6" value="c" required>
+                    No, es una simulación</label>
+            </fieldset><button class="btn btn-primary mt-4" type="submit">Calificar</button> <button
+                class="btn btn-outline-secondary mt-4" type="reset">Intentar de nuevo</button>
+            <div id="quizResult" class="alert d-none mt-4" role="status"></div>
+        </form>
+    </main>
+    <footer class="site-footer py-4 mt-5">
+        <div class="container d-flex flex-wrap justify-content-between gap-2"><strong>t</strong><span
+                class="text-secondary small">Proyecto figura · HTML, CSS, JavaScript y Bootstrap · 2026</span><a
+                href="index.html">Volver a la tienda</a></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

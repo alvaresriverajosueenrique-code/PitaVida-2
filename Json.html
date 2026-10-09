@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>json/luffiy cho</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <script>try {document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('pv-theme') || 'light')} catch (e) { }</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl sticky-top site-nav border-bottom">
+        <div class="container"><a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark"></span>
+                luffiy cho</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#juegos">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jquery.html">jQuery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="json.html">JSON</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hosting.html">Hosting y dominios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cuestionario.html">Cuestionario</a></li>
+                    <li class="nav-item ms-xl-2"><button class="btn btn-sm btn-outline-secondary theme-toggle"
+                            type="button"><i class="bi bi-moon-stars"></i> Tema</button></li>
+                    <li class="nav-item ms-xl-2"><button class="btn btn-sm btn-primary" data-bs-toggle="offcanvas"
+                            data-bs-target="#cart">🛍 Carrito <span id="cartCount"
+                                class="badge text-bg-light">0</span></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container page-content py-5">
+        <div class="page-intro mb-5"><span class="eyebrow">PIXELVAULT · APRENDE DESARROLLO WEB</span>
+            <h1 class="display-5 fw-bold mt-2">JSON</h1>
+            <p class="lead text-secondary">Un formato de texto utilizado para representar e intercambiar datos.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <article class="content-card">
+                    <h2 class="h4">¿Qué significa JSON?</h2>
+                    <p>JSON significa <em>JavaScript Object Notation</em>. Organiza datos mediante pares de clave y
+                        valor, objetos
+                        y arreglos.</p>
+                    <ul>
+                        <li>Las claves y cadenas usan comillas dobles.</li>
+                        <li>Admite cadenas, números, booleanos, <code>null</code>, objetos y arreglos.</li>
+                        <li>No permite comentarios ni comas sobrantes al final.</li>
+                    </ul>
+                    <pre class="code"><code>{
+ 
+}</code></pre>
+                </article>
+            </div>
+            <div class="col-lg-5">
+                <article class="content-card">
+                    <h2 class="h4">Leer datos JSON</h2>
+                    <p>El botón convierte un texto JSON en datos que podemos mostrar en pantalla.</p><button
+                        id="jsonDemo" class="btn btn-primary">Mostrar datos</button>
+                    <div id="jsonOutput" class="mt-3 text-secondary">Aquí aparecerán los datos.</div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer py-4 mt-5">
+        <div class="container d-flex flex-wrap justify-content-between gap-2"><strong></strong><span
+                class="text-secondary small">Proyecto figuras HTML, CSS, JavaScript y Bootstrap · 2026</span><a
+                href="index.html">Volver a la tienda</a></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
